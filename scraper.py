@@ -26,14 +26,14 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('nivas65536@gmail.com','ehwhzuwoswwgbrjq')
+    server.login('your mail id',' allow web app password ')
     subject = 'Price fell down!'
     body = 'Check the Amazon link:  https://www.amazon.in/Rs-Components-Raspberry-Pi-Motherboard/dp/B07BFH96M3/ref=dp_ob_title_ce'
     
     msg = "Subject: {}\n\n {} ".format(subject ,body)
     server.sendmail(
-        'nivas65536@gmail.com',
-        '120015097@sastra.ac.in',
+        'Sender’s mail id',
+        'Receiver’s mail id’,
         msg
     )
     print('HEY EMAIL HAS BEEN SENT!')
